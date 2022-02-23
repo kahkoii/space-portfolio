@@ -1,4 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&family=Righteous&display=swap");
+
 * {
   padding: 0;
   margin: 0;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.navbar {
+  font-family: "Righteous", cursive;
+}
+
+.ufo {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-12px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }

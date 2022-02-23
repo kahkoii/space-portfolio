@@ -8,8 +8,7 @@ const UFO: React.FC = () => {
       src={logo}
       alt="UFO"
       position="absolute"
-      width="58vw"
-      maxW="600px"
+      width={{ base: "58vw", md: "300px", lg: "520px" }}
       top="30px"
       alignSelf="center"
       className="ufo"

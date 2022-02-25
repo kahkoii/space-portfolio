@@ -35,8 +35,9 @@ const IntroSection: React.FC = () => (
         maxWidth="800px"
         lineHeight={{ base: "30px", lg: "40px" }}
         padding={{ base: "16px", lg: "26px" }}
-        background="rgba(0,0,0,0.6)"
+        background="rgba(47,78,149,0.6)"
         borderRadius="30px"
+        boxShadow="10px 10px rgba(255,255,255,0.8)"
       >
         My name is{" "}
         <chakra.span fontWeight="medium" fontSize={{ base: "2xl", lg: "4xl" }}>

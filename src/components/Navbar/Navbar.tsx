@@ -11,10 +11,10 @@ const Navbar: React.FC = () => {
 
   return (
     <Flex
-      flexDir={{ base: "column", sm: "row" }}
-      marginTop={{ base: "20vh", sm: "30vh", lg: "300px" }}
-      gap={{ base: "8px", sm: "30px", lg: "80px" }}
-      fontSize={{ base: "2xl", lg: "3xl" }}
+      flexDir="row"
+      marginTop={{ base: "10vh", sm: "16vh", md: "140px" }}
+      gap={{ base: "12px", sm: "30px", lg: "80px" }}
+      fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
       textAlign="center"
       justifyContent="center"
     >

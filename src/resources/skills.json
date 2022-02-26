@@ -2,16 +2,19 @@
   {
     "name": "Python",
     "proficiency": 100,
+    "description": "I have worked with Python on and off for about 5 years",
     "file": "python.png"
   },
   {
     "name": "TypeScript",
     "proficiency": 0,
+    "description": "I have worked with TypeScript extensively for about 1 year",
     "file": "typescript.png"
   },
   {
     "name": "React",
     "proficiency": 50,
+    "description": "I have worked with React extensively for about 1 year",
     "file": "typescript.png"
   }
 ]

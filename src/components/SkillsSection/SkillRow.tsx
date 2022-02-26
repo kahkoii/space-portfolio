@@ -1,17 +1,13 @@
-import { Flex, Text, Image, Box } from "@chakra-ui/react";
+import { Flex, Text, Image, Box, useDisclosure } from "@chakra-ui/react";
+import { SkillData } from "./SkillData.interface";
 import rocket from "./rocket.svg";
+import SkillModal from "./SkillModal";
 
-interface Props {
-  data: {
-    name: string;
-    proficiency: number;
-    file: string;
-  };
-}
-
-const SkillRow: React.FC<Props> = (props) => {
+const SkillRow: React.FC<{ data: SkillData }> = (props) => {
   const { data } = props;
   const image = require(`../../resources/images/${data.file}`).default;
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   const rocketSize = "100px";
 
   return (
@@ -23,7 +19,13 @@ const SkillRow: React.FC<Props> = (props) => {
       padding="10px 24px"
       alignItems="center"
       gap="16px"
+      onClick={onOpen}
+      cursor="pointer"
+      _hover={{
+        bgColor: "#DDD",
+      }}
     >
+      <SkillModal data={data} isOpen={isOpen} onClose={onClose} />
       <Image src={image} width="40px" height="40px" />
       <Text
         fontWeight="medium"

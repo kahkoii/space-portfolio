@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Python",
+    "proficiency": 100,
+    "file": "python.png"
+  },
+  {
+    "name": "TypeScript",
+    "proficiency": 0,
+    "file": "typescript.png"
+  },
+  {
+    "name": "React",
+    "proficiency": 50,
+    "file": "typescript.png"
+  }
+]

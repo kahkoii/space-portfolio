@@ -4,6 +4,7 @@ import { useScrollPercentage } from "react-scroll-percentage";
 import AboutSection from "./components/AboutSection/AboutSection";
 import IntroSection from "./components/IntroSection/IntroSection";
 import Navbar from "./components/Navbar/Navbar";
+import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import SkillsSection from "./components/SkillsSection/SkillsSection";
 import SpaceBG from "./components/SpaceBG/SpaceBG";
 import UFO from "./components/UFO/UFO";
@@ -27,6 +28,7 @@ function App() {
           <IntroSection />
           <AboutSection />
           <SkillsSection />
+          <ProjectsSection />
           <Box id="contact" boxSize="20px" bg="red" marginTop="800px" />
         </Flex>
       </Box>

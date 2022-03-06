@@ -9,15 +9,15 @@ const ProjectsSection: React.FC = () => {
   const slideIntervalMS = 3000;
   let time = Date.now();
   let prevTime = time;
-  let proj = 0;
+  let cProj = 0;
 
   const updateCurrentProj = (increment: number) => {
     if (increment === 1) {
-      proj = (proj + 1) % totalProjects;
+      cProj = (cProj + 1) % totalProjects;
     } else {
-      proj = proj === 0 ? totalProjects - 1 : proj - 1;
+      cProj = cProj === 0 ? totalProjects - 1 : cProj - 1;
     }
-    setCurrentProj(proj);
+    setCurrentProj(cProj);
   };
 
   const checkTime = () => {
@@ -85,7 +85,17 @@ const ProjectsSection: React.FC = () => {
                   {proj.name}
                 </Text>
                 <Flex height="91%" justifyContent="center" alignItems="center">
-                  <Image src={image} maxH="430px" boxShadow="lg" />
+                  <Image
+                    src={image}
+                    maxH="430px"
+                    boxShadow="lg"
+                    cursor={proj.url === "" ? "initial" : "pointer"}
+                    onClick={() => {
+                      if (proj.url !== "") {
+                        window.open(proj.url, "_blank");
+                      }
+                    }}
+                  />
                 </Flex>
               </Flex>
             );

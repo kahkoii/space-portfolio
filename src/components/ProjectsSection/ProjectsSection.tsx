@@ -1,20 +1,40 @@
 import { Flex, Text, Image, Circle } from "@chakra-ui/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import projects from "../../resources/projects.json";
 import CarouselSideBtn from "./CarouselSideBtn";
 
 const ProjectsSection: React.FC = () => {
   const totalProjects = projects.length;
   const [currentProj, setCurrentProj] = useState(0);
+  const slideIntervalMS = 3000;
+  let time = Date.now();
+  let prevTime = time;
+  let proj = 0;
 
   const updateCurrentProj = (increment: number) => {
     if (increment === 1) {
-      setCurrentProj((currentProj + 1) % totalProjects);
+      proj = (proj + 1) % totalProjects;
     } else {
-      const newVal = currentProj === 0 ? totalProjects - 1 : currentProj - 1;
-      setCurrentProj(newVal);
+      proj = proj === 0 ? totalProjects - 1 : proj - 1;
+    }
+    setCurrentProj(proj);
+  };
+
+  const checkTime = () => {
+    time = Date.now();
+    if (time - prevTime >= slideIntervalMS) {
+      updateCurrentProj(1);
+      prevTime = Date.now();
     }
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => checkTime(), 1000);
+    return () => {
+      clearInterval(interval);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Flex

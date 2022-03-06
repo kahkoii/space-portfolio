@@ -22,6 +22,7 @@ const CarouselSideBtn: React.FC<BtnProps> = (props) => {
       alignItems="center"
       justifyContent="center"
       fontWeight="bold"
+      userSelect="none"
       cursor="pointer"
       fontSize={{ base: "lg", lg: "2xl" }}
       _hover={

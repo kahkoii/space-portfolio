@@ -54,7 +54,7 @@ const ProjectsSection: React.FC = () => {
       >
         Projects
       </Text>
-      <Flex flexDir="row" height="540px">
+      <Flex flexDir="row" height={{ base: "360px", md: "540px" }}>
         <CarouselSideBtn type="prev" callback={updateCurrentProj}>
           {"<"}
         </CarouselSideBtn>

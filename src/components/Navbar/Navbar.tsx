@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   return (
     <Flex
       flexDir="row"
-      marginTop={{ base: "10vh", sm: "16vh", md: "140px" }}
+      marginTop="30px"
       gap={{ base: "12px", sm: "30px", lg: "80px" }}
       fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
       textAlign="center"

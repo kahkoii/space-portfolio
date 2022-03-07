@@ -1,6 +1,5 @@
 import { Flex, Box } from "@chakra-ui/react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { useScrollPercentage } from "react-scroll-percentage";
 import AboutSection from "./components/AboutSection/AboutSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import IntroSection from "./components/IntroSection/IntroSection";
@@ -12,19 +11,12 @@ import UFO from "./components/UFO/UFO";
 import "./main.css";
 
 function App() {
-  const [ref, percentage] = useScrollPercentage();
   return (
     <Router>
       <Box width="100vw" height="100vh" overflowX="hidden">
-        <Flex
-          width="100vw"
-          minH="100vh"
-          bgColor="#111a22"
-          flexDir="column"
-          ref={ref}
-        >
+        <Flex width="100vw" minH="100vh" bgColor="#111a22" flexDir="column">
           <SpaceBG />
-          <UFO percentage={percentage} />
+          <UFO />
           <Navbar />
           <IntroSection />
           <AboutSection />

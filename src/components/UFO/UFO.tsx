@@ -1,7 +1,7 @@
-import { Image } from "@chakra-ui/react";
+import { Image, Text } from "@chakra-ui/react";
 import logo from "./ufo.svg";
 
-const UFO: React.FC<{ percentage?: number }> = ({ percentage }) => {
+const UFO: React.FC = () => {
   const a = 3; // eslint-disable-line
   return (
     <>

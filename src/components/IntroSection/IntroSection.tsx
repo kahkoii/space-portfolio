@@ -6,7 +6,6 @@ const IntroSection: React.FC = () => (
     flexDir="column"
     color="white"
     alignItems="center"
-    marginTop={{ base: "20px", lg: "40px" }}
     position="relative"
     zIndex="2"
   >
@@ -14,7 +13,7 @@ const IntroSection: React.FC = () => (
       fontSize={{ base: "4xl", lg: "5xl" }}
       fontWeight="medium"
       textAlign="center"
-      marginBottom={{ base: "12px", lg: "24px" }}
+      my="80px"
     >
       Hello traveller
     </Text>
@@ -44,7 +43,7 @@ const IntroSection: React.FC = () => (
           Swee Kah Ho
         </chakra.span>
         , and I am a student studying Information Technology on a beautiful
-        green planet called 'Earth'. <br />
+        green planet called '<chakra.span as="i">Earth</chakra.span>'. <br />
         <br />
         More specifically, a place called Ngee Ann Polytechnic, Singapore.
       </Text>

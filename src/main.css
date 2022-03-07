@@ -45,8 +45,8 @@ body {
     opacity: 1;
   }
   20% {
-    transform: translate(40vw, 2vh) scale(0.2);
-    opacity: 0.6;
+    transform: translate(40vw, 2vh) scale(0);
+    opacity: 0.2;
   }
   40% {
     transform: translate(74vw, 10vh);

@@ -1,22 +1,19 @@
-import { Image, Text } from "@chakra-ui/react";
+import { Image, Box } from "@chakra-ui/react";
 import logo from "./ufo.svg";
 
 const UFO: React.FC = () => {
   const a = 3; // eslint-disable-line
   return (
-    <>
+    <Box position="absolute" zIndex="5" id="ufoBox">
       <Image
         src={logo}
         alt="UFO"
-        position="absolute"
-        width="46vw"
-        maxW="460px"
-        top="-6vw"
+        width="36vw"
+        maxW="360px"
         alignSelf="center"
         className="ufo"
-        zIndex="5"
       />
-    </>
+    </Box>
   );
 };
 

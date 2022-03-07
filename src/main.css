@@ -6,6 +6,11 @@
   font-family: "Maven Pro", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .navlink {
   font-family: "Righteous", cursive;
   color: white;
@@ -13,6 +18,10 @@
 
 .ufo {
   animation: float 2.5s ease-in-out infinite;
+}
+
+#ufoBox {
+  animation: fly 40s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -25,6 +34,52 @@
   100% {
     transform: translatey(0px);
   }
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(-24vw, 15vh);
+  }
+  5% {
+    transform: translate(5vw, 8vh);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(40vw, 2vh) scale(0.2);
+    opacity: 0.6;
+  }
+  40% {
+    transform: translate(74vw, 10vh);
+    opacity: 1;
+  }
+  45% {
+    transform: translate(74vw, 10vh);
+  }
+  55% {
+    transform: translate(80vw, -30vh);
+  }
+  60% {
+    transform: translate(40vw, -30vh);
+  }
+  65% {
+    transform: translate(40vw, 180vh) scale(5);
+  }
+  90% {
+    transform: translate(-24vw, 180vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-24vw, 15vh);
+    opacity: 0;
+  }
+  /**
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+  **/
 }
 
 #astronaut {

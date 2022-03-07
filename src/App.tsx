@@ -2,6 +2,7 @@ import { Flex, Box } from "@chakra-ui/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useScrollPercentage } from "react-scroll-percentage";
 import AboutSection from "./components/AboutSection/AboutSection";
+import ContactSection from "./components/ContactSection/ContactSection";
 import IntroSection from "./components/IntroSection/IntroSection";
 import Navbar from "./components/Navbar/Navbar";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
@@ -29,7 +30,7 @@ function App() {
           <AboutSection />
           <SkillsSection />
           <ProjectsSection />
-          <Box id="contact" boxSize="20px" bg="red" marginTop="800px" />
+          <ContactSection />
         </Flex>
       </Box>
     </Router>

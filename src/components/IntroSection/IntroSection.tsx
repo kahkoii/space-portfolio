@@ -9,14 +9,9 @@ const IntroSection: React.FC = () => (
     position="relative"
     zIndex="2"
   >
-    <Text
-      fontSize={{ base: "4xl", lg: "5xl" }}
-      fontWeight="medium"
-      textAlign="center"
-      my="80px"
-    >
-      Hello traveller
-    </Text>
+    <Flex my="120px" className="fancy_text">
+      <Text className="text_shadows">Hello traveller</Text>
+    </Flex>
     <Flex flexDir={{ base: "column", lg: "row" }} alignItems="center" gap="3vw">
       <Circle padding="8px" bgColor="#2F4E95">
         <Image

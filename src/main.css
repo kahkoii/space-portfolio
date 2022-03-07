@@ -15,10 +15,6 @@
   animation: float 2.5s ease-in-out infinite;
 }
 
-.ufo-leave {
-  animation: leave 2.5s ease-in-out 1;
-}
-
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -31,11 +27,38 @@
   }
 }
 
-@keyframes leave {
-  40% {
-    transform: scale(0.7);
+#astronaut {
+  animation: astro-float 4s ease-in-out infinite;
+}
+
+#astro-shadow {
+  opacity: 50%;
+  animation: astro-shadow 4s ease-in-out infinite;
+}
+
+@keyframes astro-float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-30px);
   }
   100% {
-    transform: scale(2.4);
+    transform: translatey(0px);
+  }
+}
+
+@keyframes astro-shadow {
+  0% {
+    opacity: 100%;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 30%;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(0.5);
   }
 }

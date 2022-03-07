@@ -2,6 +2,7 @@ import { Flex, Image, Text, Icon, Link } from "@chakra-ui/react";
 import { IconType } from "react-icons";
 import { BsGithub, BsLinkedin, BsFillEnvelopeFill } from "react-icons/bs";
 import Astronaut from "./Astronaut.svg";
+import AstroShadow from "./AstroShadow.svg";
 import Moon from "./Moon.svg";
 
 interface SocialMediaProps {
@@ -66,17 +67,32 @@ const ContactSection: React.FC = () => (
         Email: sweekahho@gmail.com
       </SocialMedia>
     </Flex>
-    <Image
+    <Flex
+      flexDir="column"
       width="20vw"
       minWidth="90px"
       maxWidth="200px"
-      bottom="6vw"
+      alignItems="center"
       marginRight="38vw"
-      src={Astronaut}
-      alt="Astronaut"
       position="absolute"
-      zIndex="3"
-    />
+      bottom="8vw"
+    >
+      <Image
+        src={Astronaut}
+        alt="Astronaut"
+        width="100%"
+        bottom="10px"
+        position="absolute"
+        zIndex="3"
+        id="astronaut"
+      />
+      <Image
+        src={AstroShadow}
+        bottom="-3vw"
+        position="absolute"
+        id="astro-shadow"
+      />
+    </Flex>
     <Image
       src={Moon}
       alt="Moon Surface"

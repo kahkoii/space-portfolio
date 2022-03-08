@@ -1,20 +1,38 @@
 [
   {
-    "name": "Python",
-    "proficiency": 100,
-    "description": "I have worked with Python on and off for about 5 years",
-    "file": "python.png"
-  },
-  {
     "name": "TypeScript",
-    "proficiency": 0,
-    "description": "I have worked with TypeScript extensively for about 1 year",
+    "proficiency": 90,
+    "description": "I have worked with TypeScript/JavaScript extensively for about 1 year, and I am confident of writing both frontend and backend code with TS. I am also familiar with concepts like arrow functions, prop spreading, and have worked with ESLint to produce consistent code.",
     "file": "typescript.png"
   },
   {
     "name": "React",
-    "proficiency": 50,
-    "description": "I have worked with React extensively for about 1 year",
-    "file": "typescript.png"
+    "proficiency": 88,
+    "description": "I have worked with React extensively for about 1 year, and I have plenty of experience with React hooks, the designing of components, and the various characteristics of single-page applications.",
+    "file": "react.png"
+  },
+  {
+    "name": "CI/CD Setup",
+    "proficiency": 80,
+    "description": "I am very familiar with setting up CI/CD workflows especially on GitHub, having integrated several actions into various repositories before to automate code testing, progress tracking, error catching, notifications and deployment.",
+    "file": "cicd.png"
+  },
+  {
+    "name": "Cloud Native Development",
+    "proficiency": 80,
+    "description": "I have studied various concepts relating to Cloud Native Development, such as containers, microservices and REST APIs, CI/CD and DevOps. I have also had practical working experience with the containerization tool Docker to deploy applications.",
+    "file": "docker.png"
+  },
+  {
+    "name": "Python",
+    "proficiency": 70,
+    "description": "I have used Python on and off for about 5 years for a myriad of purposes, from data analytics, to machine learning, to competitive programming. I am very comfortable using Python as an all-purpose language to solve problems, but I'm not too experienced doing object-oriented programming with it.",
+    "file": "python.png"
+  },
+  {
+    "name": "Go",
+    "proficiency": 60,
+    "description": "I have used Go to create microservices and web application backend before, using libraries like Mux to handle API requests, and also using channels to handle several real-time goroutines.",
+    "file": "go.png"
   }
 ]

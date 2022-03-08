@@ -1,10 +1,16 @@
 import { Image, Box } from "@chakra-ui/react";
+import { useState } from "react";
 import logo from "./ufo.svg";
 
 const UFO: React.FC = () => {
-  const a = 3; // eslint-disable-line
+  const [hidden, setHidden] = useState(false);
   return (
-    <Box position="absolute" zIndex="5" id="ufoBox">
+    <Box
+      position="absolute"
+      zIndex="5"
+      onClick={() => setHidden(true)}
+      id="ufoBox"
+    >
       <Image
         src={logo}
         alt="UFO"
@@ -12,6 +18,7 @@ const UFO: React.FC = () => {
         maxW="360px"
         alignSelf="center"
         className="ufo"
+        display={hidden ? "none" : "initial"}
       />
     </Box>
   );

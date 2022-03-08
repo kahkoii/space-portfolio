@@ -48,23 +48,23 @@ body {
     transform: translate(40vw, 2vh) scale(0);
     opacity: 0.2;
   }
-  40% {
+  35% {
     transform: translate(74vw, 10vh);
     opacity: 1;
   }
-  45% {
+  40% {
     transform: translate(74vw, 10vh);
   }
-  55% {
+  50% {
     transform: translate(80vw, -30vh);
   }
-  60% {
+  55% {
     transform: translate(40vw, -30vh);
   }
-  65% {
+  59% {
     transform: translate(40vw, 180vh) scale(5);
   }
-  90% {
+  60% {
     transform: translate(-24vw, 180vh);
     opacity: 1;
   }
@@ -72,14 +72,6 @@ body {
     transform: translate(-24vw, 15vh);
     opacity: 0;
   }
-  /**
-  50% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-  **/
 }
 
 #astronaut {
@@ -87,7 +79,6 @@ body {
 }
 
 #astro-shadow {
-  opacity: 50%;
   animation: astro-shadow 4s ease-in-out infinite;
 }
 
@@ -105,15 +96,15 @@ body {
 
 @keyframes astro-shadow {
   0% {
-    opacity: 100%;
+    opacity: 1;
     transform: scale(0.5);
   }
   50% {
-    opacity: 30%;
+    opacity: 0.3;
     transform: scale(1);
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
     transform: scale(0.5);
   }
 }

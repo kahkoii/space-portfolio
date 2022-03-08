@@ -1,26 +1,32 @@
 [
   {
-    "name": "Chalk - Student-Tutor Matching Platform",
+    "name": "Chalk: Student-Tutor Matching Platform",
     "description": "The Chalk Platform aims to connect students of all ages with qualified tutors from all backgrounds",
     "url": "https://chalkplatform.com",
     "file": "Chalk_Screenshot.png"
   },
   {
-    "name": "Facial-Recognition Door Access",
-    "description": "smthsmth",
-    "url": "",
-    "file": "CPP_Reversi.png"
-  },
-  {
-    "name": "lalala test2",
-    "description": "smthsmth",
-    "url": "",
-    "file": "CPP_Reversi.png"
-  },
-  {
     "name": "C++ Reversi Command Line Game",
-    "description": "I have worked with React extensively for about 1 year",
+    "description": "",
     "url": "",
     "file": "CPP_Reversi.png"
+  },
+  {
+    "name": "Driver-Passenger Matching Microservice",
+    "description": "",
+    "url": "https://github.com/kahkoii/ride-sharing-platform-assignment",
+    "file": "ridesharingplatform.png"
+  },
+  {
+    "name": "Student Comment & Rating Microservice",
+    "description": "",
+    "url": "https://github.com/kahkoii/ETI-Assignment2",
+    "file": "commentratingms.png"
+  },
+  {
+    "name": "Facial-Recognition Door Access",
+    "description": "",
+    "url": "https://github.com/kahkoii/Sentry-Website",
+    "file": "frdooraccess.png"
   }
 ]
